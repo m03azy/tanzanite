@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanzanite Skills Academy - Jifunze Leo, Badilisha Kesho Yako</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3a0ca3;
+            --secondary-color: #4cc9f0;
+            --accent-color: #f72585;
+        }
+        
+        body {
+            font-family: 'popins', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .slogan {
+            font-weight: 700;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #2a087a;
+            border-color: #2a087a;
+        }
+        
+        .btn-accent {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: white;
+        }
+        
+        .btn-accent:hover {
+            background-color: #d91a6d;
+            border-color: #d91a6d;
+            color: white;
+        }
+        
+        footer {
+            background-color: #1a1a2e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <span class="text-primary">Tanzanite</span> Skills Academy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn btn-accent" href="#join">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Unlock Your Potential with Tanzanite Skills Academy</h1>
+                    <p class="slogan mb-4">"Jifunze Leo, Badilisha Kesho Yako"</p>
+                    <p class="lead mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem est deserunt vel non corrupti labore, delectus ex expedita qui sequi mollitia, molestias dolor veritatis facere ipsa deleniti quisquam, incidunt quidem!</p>
+                    <a href="#join" class="btn btn-primary btn-lg px-4 me-2">Join Now</a>
+                    <a href="#services" class="btn btn-outline-light btn-lg px-4">Our Services</a>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Students learning" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Services</h2>
+                <p class="lead text-muted">Comprehensive programs to help you grow in all aspects of life</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Personal Development -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="h4">Personal Development</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit expedita necessitatibus debitis, maxime rerum non eveniet nobis excepturi praesentium quod quos soluta repellat provident pariatur hic, animi, facilis voluptates atque!</p>
+                            <a href="#join" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Personal Finance Management -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <h3 class="h4">Personal Finance Management</h3>
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla amet deleniti repellendus voluptatibus officia, consequatur neque qui libero voluptates molestias sint nostrum ut inventore sunt eos consequuntur nisi velit dolores!</p>
+                            <a href="#join" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Career Development -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3 class="h4">Career Development</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque non optio iure. Mollitia quaerat animi fugiat natus cum vero omnis numquam quo aspernatur doloribus, debitis consectetur porro, asperiores atque eveniet.</p>
+                            <a href="#join" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Business Development -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="h4">Business Development</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis iste atque aliquam minima rem earum unde ullam eaque corporis temporibus alias modi labore fuga, magnam numquam velit laudantium. Sed?</p>
+                            <a href="#join" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technology Development -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3 class="h4">Technology Development</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum, sed repellendus perspiciatis inventore natus eaque numquam, eveniet incidunt dolor quis. Fugit, nulla blanditiis ipsa quasi soluta corporis tenetur alias!</p>
+                            <a href="#join" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Join Now Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card shadow-sm bg-primary text-white">
+                        <div class="card-body text-center p-4 d-flex flex-column justify-content-center">
+                            <h3 class="h4 mb-3">Ready to Transform Your Life?</h3>
+                            <p>Join thousands of students who have changed their lives through our programs.</p>
+                            <a href="#join" class="btn btn-accent btn-lg mt-3">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="About Tanzanite Skills Academy" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">About Tanzanite Skills Academy</h2>
+                    <p class="lead">We are committed to empowering individuals with practical skills that transform lives and communities.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, ipsa mollitia earum rerum tempora eum ab sed rem sequi nostrum molestiae vero eos officia ratione. Praesentium explicabo ab consectetur soluta.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est vel adipisci sequi id veniam? Ullam, iste deserunt. Quam maxime rerum at laborum minima eveniet facilis porro similique. Repudiandae, at tempore?</p>
+                    <div class="d-flex align-items-center mt-4">
+                        <div class="me-4 text-center">
+                            <h3 class="fw-bold text-primary">5,000+</h3>
+                            <p class="mb-0">Students Trained</p>
+                        </div>
+                        <div class="me-4 text-center">
+                            <h3 class="fw-bold text-primary">50+</h3>
+                            <p class="mb-0">Expert Instructors</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="fw-bold text-primary">95%</h3>
+                            <p class="mb-0">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Success Stories</h2>
+                <p class="lead text-muted">Hear from our students</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam voluptatem accusantium dolores tempora. Modi veritatis iste ducimus officiis harum enim minus error, fugiat libero recusandae similique obcaecati adipisci! Quidem?"</p>
+                            <div class="d-flex align-items-center mt-auto">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J." class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h5 class="mb-0">Sarah J.</h5>
+                                    <small class="text-muted">Personal Finance Graduate</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi deleniti doloremque quasi delectus quia placeat dolore nam beatae illum, illo dicta ad cupiditate explicabo voluptatum magnam molestiae impedit repellendus?"</p>
+                            <div class="d-flex align-items-center mt-auto">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael T." class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h5 class="mb-0">Michael T.</h5>
+                                    <small class="text-muted">Career Development Graduate</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, necessitatibus beatae est ducimus quas fuga pariatur perferendis quia provident totam sequi facilis libero unde quisquam tempore ipsam numquam distinctio accusamus?"</p>
+                            <div class="d-flex align-items-center mt-auto">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amina K." class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h5 class="mb-0">Amina K.</h5>
+                                    <small class="text-muted">Technology Development Graduate</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Now CTA -->
+    <section id="join" class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Future?</h2>
+            <p class="lead mb-5">Join Tanzanite Skills Academy today and take the first step toward a brighter tomorrow.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                <a href="#" class="btn btn-accent btn-lg px-4">Enroll Now</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Contact Us</h2>
+                    <p class="lead">Have questions? We're here to help!</p>
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit deleniti exercitationem corporis? Nam exercitationem cum ad quae, eius ullam nostrum dolorem! Consequatur dolore eum voluptas inventore architecto accusamus doloribus dolorem."</p>
+                    
+                    <div class="mt-5">
+                        <div class="d-flex mb-4">
+                            <div class="me-4 text-primary">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Location</h5>
+                                <p class="mb-0">123 Skills Street, Dar es Salaam, Tanzania</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="me-4 text-primary">
+                                <i class="fas fa-phone-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Phone</h5>
+                                <p class="mb-0">+255 123 456 789</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="me-4 text-primary">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Email</h5>
+                                <p class="mb-0">info@tanzaniteskills.ac.tz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="h4 mb-4">Send us a message</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h4 text-white mb-4"><span class="text-primary">Tanzanite</span> Skills Academy</h3>
+                    <p>"Jifunze Leo, Badilisha Kesho Yako"</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sit magni perferendis optio nisi suscipit atque repellat molestias ducimus, nobis facere aut cum velit consectetur exercitationem perspiciatis id explicabo? Earum.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                        <li><a href="#join" class="text-white text-decoration-none">Join Now</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Personal Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Finance Management</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Career Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Business Development</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Technology Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates on new courses and special offers.</p>
+                    <form class="mt-4">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                  <p class="small mb-0">&copy; <span id="currentYear"></span> Tanzanite Skills Academy. All rights reserved.</p>
+                </div>
+                <script>
+                  document.getElementById('currentYear').textContent = new Date().getFullYear();
+                </script>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="#" class="text-white text-decoration-none">Privacy Policy</a> | 
+                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
